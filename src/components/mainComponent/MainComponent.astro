@@ -1,0 +1,40 @@
+---
+import ComponentCommon from "./ComponentCommon.astro"
+---
+
+<main class="w-[70%] bg-[#fff] p-10">
+
+  <h3 class="text-lg font-bold text-[#233A5F] underline-bar">Sobre mi</h3>
+  <p class="mt-5 text-[#878787] text-sm">
+    Desarrollador Full-Stack y graduado en Física. Mi experiencia se extiende desde la administración de sistemas CMS, como OWCS, hasta la programación en el lado del servidor y del cliente utilizando Spring Framework. Siento una gran pasión por JavaScript y todo su entorno tecnológico, lo que me impulsa a explorar y crear soluciones web de manera apasionada y eficiente
+  </p>
+
+  
+  <h3 class="text-lg font-bold text-[#233A5F] underline-bar mt-[40px]">Educación</h3>
+
+  <ComponentCommon 
+    date={'2012-2014'} 
+    title={'Bachiller, I.E.S Norba Caesarina'} 
+    description={'El bachillerato científico permite adquirir los conocimientos y destrezas básicas en el ámbito científico.'}
+  />
+  <ComponentCommon 
+    date={'2014-2021'} 
+    title={'Grado en Física, UEX'} 
+    description={'El grado en Física ofrece una formación centrada en los fenómenos físicos y las leyes que los explican.'}
+  />
+
+  <h3 class="text-lg font-bold text-[#233A5F] underline-bar mt-[40px]">Experiencia</h3>
+
+  <ComponentCommon 
+    date={'Abril 2021 - Junio 2021'}
+    title={'I+D, eCapure3D S.L'} 
+    description={'Desarrollo de algoritmos predictivos para detectar la evolución de variables climáticas en España. Todo esto mediante el uso de técnicas de Machine Learning y Deep Learning. Además, los datos utilizados para entrenar estos modelos son los proporcionados por la Agencia Estatal de Meteorología (AEMET).'}
+  />
+
+  <ComponentCommon 
+    date={'Agosto 2021-Actualidad'}
+    title={'Desarrollador FullStack, Viewnext S.A'} 
+    description={'Pertenezco al equipo de desarrollo de la área pública y privada de Naturgy. Mi trabajo consiste en el desarrollo de nuevas funcionalidades y mantenimiento de las ya existentes, todo esto dentro del marco FullStack. Trabajando con OWCS y Spring FrameWork.' }
+  />
+
+</main>

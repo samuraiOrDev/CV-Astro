@@ -1,0 +1,23 @@
+---
+interface Props {
+	skills: {
+    title: string;
+    list: string[];
+  }
+}
+
+const { skills } = Astro.props;
+const { title, list } = skills; 
+---
+
+<div class="mt-[30px]">
+  <h3 class="text-[#fff] text-base font-bold">{title}</h3>
+  <ul class="mt-[15px] list-disc ml-[20px]">
+
+    {
+      list.map((item) => (
+        <li class="text-xs text-[#fff] mb-2">{item}</li>
+      ))
+    }
+  </ul>
+</div>

@@ -1,0 +1,29 @@
+---
+import HeaderSideBar from "./sideBar/HeaderSideBar.astro";
+import InfoSideBar from "./sideBar/InfoSideBar.astro";
+import CommonComponent from "./sideBar/CommonComponentSideBar.astro";
+import BarSocialSideBar from "./sideBar/BarSocialSideBar.astro";
+
+const skills = {
+  title: "Skills",
+  list: [
+    "HTML and CSS",
+    "Bash, JavaScript, TypeScript, Python, Java",
+    "Frontend: React, Astro, NextJS, TailwindCss, etc",
+    "Backend: Spring, NestJS, NodeJS, etc",
+    "Database: MySQL, MongoDB, OracleSql etc",
+  ],
+};
+const hobbies = {
+  title: "Hobbies",
+  list: ["Reading", "Gaming", "Music"],
+};
+---
+
+<aside class="w-[30%] bg-gradient-to-b from-[#233a5f] to-blue-900 p-4">
+  <HeaderSideBar />
+  <InfoSideBar />
+  <CommonComponent skills={skills} />
+  <CommonComponent skills={hobbies} />
+  <BarSocialSideBar />
+</aside>
